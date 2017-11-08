@@ -1,0 +1,19 @@
+@mixin animate($effect:all, $duration:0.3) {
+	@if str-index($effect, ',') != null {
+		transition-property: unquote($effect);
+		transition-duration: 1s*$duration;
+	} @else {
+	 	transition: unquote($effect) 1s*$duration;
+	}
+}
+
+@mixin animation($effect:fadeIn, $duration:0.5, $iteration:1, $timing:ease) {
+	animation-name: unquote($effect);
+	animation-duration: 1s*$duration;
+	animation-iteration-count: $iteration;
+	animation-timing-function: $timing;
+}
+
+@mixin transition-duration( $duration:0.5 ) {
+	transition-duration: 1s*$duration;
+}

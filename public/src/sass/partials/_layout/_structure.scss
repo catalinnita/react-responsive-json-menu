@@ -1,0 +1,32 @@
+header {
+	@media (min-width: 630px) {
+		margin-top: 50px;
+
+	}
+	padding: 30px;
+}
+
+footer {
+	padding: 30px;
+	margin-top: 30px;
+	position: absolute;
+	bottom: 0;
+	@media (min-width: 630px) {
+		position: static;
+		bottom: auto;
+	}
+}
+
+section {
+	padding: 50px 30px;
+}
+
+.container {
+	max-width: 1080px;
+	padding: 0;
+	margin: 0 auto;
+	@media (min-width: 630px) {
+		position: relative;
+	}
+
+}
